@@ -1,0 +1,94 @@
+{
+  "id": "modi",
+  "emoji": "🤌",
+  "name": "Modi di Dire",
+  "desc": "Idioms & slang — the real spoken Italian",
+  "level": "B1",
+  "vocabulary": [
+    {
+      "id": "mod_001",
+      "level": "B1",
+      "it": "in bocca al lupo",
+      "en": "good luck (lit: into the wolf's mouth)",
+      "ex": "Domani ho l'esame. — In bocca al lupo!",
+      "exEn": "Tomorrow I have my exam. — Good luck!",
+      "note": "Never answer “grazie” — it cancels the luck. The correct reply is “crepi!” (may it die). Yes, you're wishing death on the wolf. It's tradition."
+    },
+    {
+      "id": "mod_002",
+      "level": "B1",
+      "it": "che palle!",
+      "en": "what a drag! / so annoying (mildly rude)",
+      "note": "Literally “what balls”. Rude-ish but extremely common — about bureaucracy, delays, Mondays. Calibrate your audience."
+    },
+    {
+      "id": "mod_003",
+      "level": "B1",
+      "it": "essere al verde",
+      "en": "to be broke",
+      "ex": "Non esco stasera, sono al verde.",
+      "exEn": "I'm not going out tonight, I'm broke.",
+      "note": "Likely from old gambling tables — when your money was gone, you were “at the green”. Very relatable after payday week."
+    },
+    {
+      "id": "mod_004",
+      "level": "B1",
+      "it": "boh!",
+      "en": "dunno / who knows 🤷",
+      "note": "A complete sentence. A philosophy. The most honest word in Italian: shoulders optional but recommended."
+    },
+    {
+      "id": "mod_005",
+      "level": "B1",
+      "it": "magari!",
+      "en": "I wish! / if only!",
+      "ex": "Andiamo in Sicilia quest'estate? — Magari!",
+      "exEn": "Are we going to Sicily this summer? — I wish!",
+      "note": "As an answer, magari means “I wish”. Alone in a sentence, it means “maybe”. Same word, opposite moods. Italian!"
+    },
+    {
+      "id": "mod_006",
+      "level": "A2",
+      "it": "non vedo l'ora",
+      "en": "I can't wait",
+      "ex": "Non vedo l'ora di vederti.",
+      "exEn": "I can't wait to see you.",
+      "note": "Literally “I don't see the hour”. Follow with “di” + infinitive or “di” + noun. Deploy liberally before holidays."
+    },
+    {
+      "id": "mod_007",
+      "level": "B1",
+      "it": "figurati!",
+      "en": "don't mention it! / no worries! (informal)",
+      "ex": "Grazie per il passaggio! — Figurati!",
+      "exEn": "Thanks for the ride! — Don't mention it!",
+      "note": "Also used sarcastically: “Figurati se mi chiama” = “as if he'd ever call me”. Tone does all the work."
+    },
+    {
+      "id": "mod_008",
+      "level": "A2",
+      "it": "dai!",
+      "en": "come on! / go on! / please?",
+      "ex": "Dai, vieni anche tu!",
+      "exEn": "Come on, you come too!",
+      "note": "The most versatile syllable in Italy. Encouragement, disbelief, pleading — context and eyebrow position required."
+    },
+    {
+      "id": "mod_009",
+      "level": "A2",
+      "it": "che schifo!",
+      "en": "yuck! / gross! / disgusting!",
+      "ex": "Hai visto il bagno? Che schifo!",
+      "exEn": "Did you see the bathroom? Gross!"
+    },
+    {
+      "id": "mod_010",
+      "level": "B1",
+      "it": "fare una figuraccia",
+      "en": "to embarrass yourself / make a bad impression",
+      "ex": "Ho fatto una figuraccia al colloquio.",
+      "exEn": "I made a fool of myself at the interview.",
+      "note": "Fear of this motivates half of all Italian social behaviour. The other half is espresso."
+    }
+  ]
+}

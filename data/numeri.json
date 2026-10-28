@@ -1,0 +1,148 @@
+{
+  "id": "numeri",
+  "emoji": "🔢",
+  "name": "Numeri",
+  "desc": "Numbers — the ones you'll actually use",
+  "level": "A1",
+  "vocabulary": [
+    {
+      "id": "num_001",
+      "level": "A1",
+      "it": "uno",
+      "en": "one",
+      "ex": "Ho un cane.",
+      "exEn": "I have one dog.",
+      "note": "Uno loses its -o before a noun: un cane, un amico — never “uno cane”. You're welcome."
+    },
+    {
+      "id": "num_002",
+      "level": "A1",
+      "it": "due",
+      "en": "two",
+      "ex": "Due caffè, per favore.",
+      "exEn": "Two coffees, please."
+    },
+    {
+      "id": "num_003",
+      "level": "A1",
+      "it": "tre",
+      "en": "three",
+      "ex": "Un tavolo per tre.",
+      "exEn": "A table for three."
+    },
+    {
+      "id": "num_004",
+      "level": "A1",
+      "it": "quattro",
+      "en": "four"
+    },
+    {
+      "id": "num_005",
+      "level": "A1",
+      "it": "cinque",
+      "en": "five"
+    },
+    {
+      "id": "num_006",
+      "level": "A1",
+      "it": "sei",
+      "en": "six",
+      "note": "Identical to “sei” = you are. Context saves you: “sei anni” (six years) vs “sei simpatico” (you're nice)."
+    },
+    {
+      "id": "num_007",
+      "level": "A1",
+      "it": "sette",
+      "en": "seven"
+    },
+    {
+      "id": "num_008",
+      "level": "A1",
+      "it": "otto",
+      "en": "eight",
+      "ex": "Ci vediamo alle otto.",
+      "exEn": "See you at eight."
+    },
+    {
+      "id": "num_009",
+      "level": "A1",
+      "it": "nove",
+      "en": "nine"
+    },
+    {
+      "id": "num_010",
+      "level": "A1",
+      "it": "dieci",
+      "en": "ten"
+    },
+    {
+      "id": "num_011",
+      "level": "A1",
+      "it": "undici",
+      "en": "eleven"
+    },
+    {
+      "id": "num_012",
+      "level": "A1",
+      "it": "dodici",
+      "en": "twelve"
+    },
+    {
+      "id": "num_013",
+      "level": "A1",
+      "it": "tredici",
+      "en": "thirteen",
+      "note": "In Italy 13 is just a number. The unlucky one is 17, diciassette. Blame Roman numerals (XVII → VIXI, “I lived”)."
+    },
+    {
+      "id": "num_014",
+      "level": "A1",
+      "it": "quindici",
+      "en": "fifteen",
+      "ex": "Ci vediamo alle quindici.",
+      "exEn": "See you at 3pm.",
+      "note": "Italians use the 24-hour clock: 15:00 = quindici. Miss a train appointment once and you'll never forget."
+    },
+    {
+      "id": "num_015",
+      "level": "A1",
+      "it": "diciotto",
+      "en": "eighteen",
+      "note": "Dieci drops its last vowel: diciotto, NOT “dieciotto”. Same for diciannove."
+    },
+    {
+      "id": "num_016",
+      "level": "A1",
+      "it": "venti",
+      "en": "twenty"
+    },
+    {
+      "id": "num_017",
+      "level": "A1",
+      "it": "ventuno",
+      "en": "twenty-one",
+      "note": "Venti + uno → ventuno. The -i falls off before uno and otto: ventotto, not “ventiotto”."
+    },
+    {
+      "id": "num_018",
+      "level": "A1",
+      "it": "trenta",
+      "en": "thirty"
+    },
+    {
+      "id": "num_019",
+      "level": "A1",
+      "it": "cento",
+      "en": "one hundred",
+      "ex": "Sono cento per cento d'accordo.",
+      "exEn": "I'm one hundred percent agreed."
+    },
+    {
+      "id": "num_020",
+      "level": "A1",
+      "it": "mille",
+      "en": "one thousand",
+      "note": "Plural is “mila”: duemila, tremila. A thousand little irregularities, this language."
+    }
+  ]
+}

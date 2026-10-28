@@ -1,0 +1,114 @@
+{
+  "id": "verbi",
+  "emoji": "⚡",
+  "name": "Verbi Essenziali",
+  "desc": "The verbs that do the heavy lifting",
+  "level": "A1–A2",
+  "vocabulary": [
+    {
+      "id": "ver_001",
+      "level": "A1",
+      "it": "essere",
+      "en": "to be",
+      "ex": "Io sono, tu sei.",
+      "exEn": "I am, you are.",
+      "note": "The verb you'll conjugate 200 times a day. “Sono stanco” — I'm tired. You'll be saying that a lot too, presumably."
+    },
+    {
+      "id": "ver_002",
+      "level": "A1",
+      "it": "avere",
+      "en": "to have",
+      "ex": "Ho un cane.",
+      "exEn": "I have a dog."
+    },
+    {
+      "id": "ver_003",
+      "level": "A1",
+      "it": "fare",
+      "en": "to do / to make",
+      "ex": "Che fai stasera?",
+      "exEn": "What are you doing tonight?",
+      "note": "Fair warning: Italians use fare for everything — fare colazione, fare una passeggiata, fare tardi. It carries the whole language on its back."
+    },
+    {
+      "id": "ver_004",
+      "level": "A1",
+      "it": "andare",
+      "en": "to go",
+      "ex": "Io vado, tu vai.",
+      "exEn": "I go, you go.",
+      "note": "“Andiamo!” alone means “let's go!” or an enthusiastic “come on!”. You'll use it more than you think."
+    },
+    {
+      "id": "ver_005",
+      "level": "A2",
+      "it": "venire",
+      "en": "to come",
+      "ex": "Vengo anch'io!",
+      "exEn": "I'm coming too!",
+      "note": "Irregular: io vengo, tu vieni, loro vengono. Not “veno” — that's not a word, it's a cry for help."
+    },
+    {
+      "id": "ver_006",
+      "level": "A1",
+      "it": "mangiare",
+      "en": "to eat",
+      "ex": "Mangiamo qualcosa?",
+      "exEn": "Shall we eat something?"
+    },
+    {
+      "id": "ver_007",
+      "level": "A1",
+      "it": "bere",
+      "en": "to drink",
+      "ex": "Bevi il caffè?",
+      "exEn": "Do you drink the coffee?",
+      "note": "Io bevo, tu bevi. Asking “vuoi bere qualcosa?” is the classic Italian move to extend an evening."
+    },
+    {
+      "id": "ver_008",
+      "level": "A1",
+      "it": "parlare",
+      "en": "to speak",
+      "ex": "Parli italiano?",
+      "exEn": "Do you speak Italian?"
+    },
+    {
+      "id": "ver_009",
+      "level": "A1",
+      "it": "volere",
+      "en": "to want",
+      "ex": "Voglio un gelato.",
+      "exEn": "I want a gelato.",
+      "note": "The magic polite form: “vorrei” (I would like). “Voglio” is blunt; “vorrei” opens doors, menus, and hearts."
+    },
+    {
+      "id": "ver_010",
+      "level": "A1",
+      "it": "potere",
+      "en": "can / to be able to",
+      "ex": "Posso avere il menù?",
+      "exEn": "May I have the menu?",
+      "note": "“Posso...?” is your golden key for any request. No Italian sentence survives without it, roughly."
+    },
+    {
+      "id": "ver_011",
+      "level": "A1",
+      "it": "dovere",
+      "en": "must / to have to",
+      "ex": "Devo andare.",
+      "exEn": "I have to go.",
+      "note": "The polite escape hatch from any conversation: “Devo scappare!” — I must run! Nobody knows where. It doesn't matter."
+    },
+    {
+      "id": "ver_012",
+      "level": "A2",
+      "it": "sapere",
+      "en": "to know (a fact / a skill)",
+      "ex": "So nuotare.",
+      "exEn": "I know how to swim.",
+      "note": "Sapere = facts & skills; conoscere = people & places. You “sai” the answer, you “conosci” Marco. Mixing them up is endearing. Once."
+    }
+  ]
+}

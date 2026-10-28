@@ -1,0 +1,109 @@
+{
+  "id": "amore",
+  "emoji": "💘",
+  "name": "Amore & Rimorchio",
+  "desc": "Flirting, feelings, and one very big question",
+  "level": "A2+",
+  "vocabulary": [
+    {
+      "id": "amo_001",
+      "level": "A2",
+      "it": "mi piaci",
+      "en": "I like you (romantically)",
+      "ex": "Mi piaci davvero.",
+      "exEn": "I really like you.",
+      "note": "“Mi piaci” is the flirt. “Ti piaccio?” is fishing. Both work; one is braver."
+    },
+    {
+      "id": "amo_002",
+      "level": "A2",
+      "it": "sei bellissimo / bellissima",
+      "en": "you are beautiful (m / f)",
+      "note": "The ending depends on WHO you're complimenting, not who's speaking. Get it wrong and the compliment gets... creative."
+    },
+    {
+      "id": "amo_003",
+      "level": "A2",
+      "it": "posso offrirti un caffè?",
+      "en": "can I buy you a coffee?",
+      "ex": "Posso offrirti un caffè, se hai cinque minuti.",
+      "exEn": "I can buy you a coffee, if you have five minutes.",
+      "note": "The most Italian flirting strategy ever: reasonable, caffeinated, and hard to refuse."
+    },
+    {
+      "id": "amo_004",
+      "level": "A2",
+      "it": "mi dai il tuo numero?",
+      "en": "can I have your number?",
+      "ex": "Mi dai il tuo numero? Ci sentiamo.",
+      "exEn": "Can I get your number? We'll talk."
+    },
+    {
+      "id": "amo_005",
+      "level": "A2",
+      "it": "sei libera stasera?",
+      "en": "are you free tonight? (to a woman)",
+      "note": "To a man: “sei libero stasera?”. Follow-up you'll need: “ti va di uscire?” — do you feel like going out?"
+    },
+    {
+      "id": "amo_006",
+      "level": "A2",
+      "it": "vorrei invitarti a cena",
+      "en": "I'd like to invite you to dinner",
+      "ex": "Vorrei invitarti a cena, sabato.",
+      "exEn": "I'd like to invite you to dinner, Saturday.",
+      "note": "Notice the conditional “vorrei” — politeness even at maximum flirt. That's the Italian way."
+    },
+    {
+      "id": "amo_007",
+      "level": "A2",
+      "it": "mi manchi",
+      "en": "I miss you",
+      "note": "Literally “you are missing TO me”. The grammar is doing the emotional heavy lifting here, as Italian grammar does."
+    },
+    {
+      "id": "amo_008",
+      "level": "A2",
+      "it": "ti voglio bene",
+      "en": "I care about you / I love you (affection)",
+      "note": "For friends, family, and slow-burn romances. NOT to be confused with “ti amo” — that one's heavy artillery."
+    },
+    {
+      "id": "amo_009",
+      "level": "A2",
+      "it": "ti amo",
+      "en": "I love you (romantic, serious)",
+      "note": "Reserved. Powerful. Telling it to your barista will end your coffee privileges. Use accordingly."
+    },
+    {
+      "id": "amo_010",
+      "level": "A2",
+      "it": "vuoi sposarmi?",
+      "en": "will you marry me?",
+      "ex": "Vuoi sposarmi? — Sì!",
+      "exEn": "Will you marry me? — Yes!",
+      "note": "Practice this one carefully. There may be a quiz later, in one sense or another."
+    },
+    {
+      "id": "amo_011",
+      "level": "A2",
+      "it": "ci conosciamo? No? Allora diamoci del tu.",
+      "en": "do we know each other? No? Then let's switch to informal you.",
+      "note": "A classic cheeky opener. Cheesy rating: gorgonzola. Success rate: unverifiable, but it gets a laugh, which is half the battle."
+    },
+    {
+      "id": "amo_012",
+      "level": "A2",
+      "it": "sei stanca? Hai corso nella mia testa tutto il giorno.",
+      "en": "are you tired? You've been running through my head all day.",
+      "note": "The translated classic pickup line. Deploy at your own risk. Warning label not included."
+    },
+    {
+      "id": "amo_013",
+      "level": "A2",
+      "it": "sei del pane? Perché mi hai lievitato il cuore.",
+      "en": "are you bread? Because you made my heart rise.",
+      "note": "For bread enthusiasts only. Worst-case scenario: you get bread out of the conversation. That's not nothing."
+    }
+  ]
+}

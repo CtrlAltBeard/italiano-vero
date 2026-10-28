@@ -1,0 +1,130 @@
+{
+  "id": "cibo",
+  "emoji": "🍝",
+  "name": "Cibo & Ristorante",
+  "desc": "Food, drinks and surviving the bill",
+  "level": "A1",
+  "vocabulary": [
+    {
+      "id": "cib_001",
+      "level": "A1",
+      "it": "il pane",
+      "en": "bread",
+      "ex": "Altro pane, per favore.",
+      "exEn": "More bread, please.",
+      "note": "Bread arrives unasked — and often with “il coperto”, a small cover charge. Check the menu, not the vibes."
+    },
+    {
+      "id": "cib_002",
+      "level": "A1",
+      "it": "l'acqua",
+      "en": "water",
+      "ex": "Un'acqua naturale, grazie.",
+      "exEn": "A still water, thanks.",
+      "note": "Ordering water: “naturale” (still) or “frizzante” (sparkling). Tap water isn't a thing — that's “acqua del rubinetto”, and brace yourself."
+    },
+    {
+      "id": "cib_003",
+      "level": "A1",
+      "it": "il caffè",
+      "en": "coffee (espresso by default)",
+      "ex": "Un caffè, per favore.",
+      "exEn": "An espresso, please.",
+      "note": "“Un caffè” means espresso. If you want the big watery thing, ask for “un caffè americano” and endure the look you'll get."
+    },
+    {
+      "id": "cib_004",
+      "level": "A1",
+      "it": "il cappuccino",
+      "en": "cappuccino",
+      "note": "A breakfast drink ONLY. Order one after lunch and the barista will still serve it — while quietly filing you under “tourist” forever."
+    },
+    {
+      "id": "cib_005",
+      "level": "A1",
+      "it": "la pasta",
+      "en": "pasta",
+      "ex": "La pasta fatta in casa è la migliore.",
+      "exEn": "Homemade pasta is the best."
+    },
+    {
+      "id": "cib_006",
+      "level": "A1",
+      "it": "la pizza",
+      "en": "pizza",
+      "note": "Ananas sulla pizza: technically legal, morally contested. Your nonna's opinion is stronger than any law."
+    },
+    {
+      "id": "cib_007",
+      "level": "A1",
+      "it": "il formaggio",
+      "en": "cheese",
+      "ex": "Vuoi del formaggio?",
+      "exEn": "Do you want some cheese?",
+      "note": "Asking for parmigiano on a fish pasta is considered a small act of war. Don't."
+    },
+    {
+      "id": "cib_008",
+      "level": "A1",
+      "it": "il vino",
+      "en": "wine",
+      "ex": "Un bicchiere di vino rosso.",
+      "exEn": "A glass of red wine.",
+      "note": "Rosso o bianco? House wine (“della casa”) is often the honest choice, and cheap."
+    },
+    {
+      "id": "cib_009",
+      "level": "A1",
+      "it": "la birra",
+      "en": "beer",
+      "ex": "Due birre, grazie!",
+      "exEn": "Two beers, thanks!"
+    },
+    {
+      "id": "cib_010",
+      "level": "A1",
+      "it": "il gelato",
+      "en": "ice cream / gelato",
+      "note": "Order “un cono” (cone) or “una coppetta” (cup). If it's florescent green pistachio, run — real pistachio is dull beige and delicious."
+    },
+    {
+      "id": "cib_011",
+      "level": "A1",
+      "it": "il conto",
+      "en": "the bill / check",
+      "ex": "Il conto, per favore!",
+      "exEn": "The bill, please!",
+      "note": "Say it loudly enough and someone will eventually come. Splitting the bill exists, but expect the waiter's quiet judgement."
+    },
+    {
+      "id": "cib_012",
+      "level": "A1",
+      "it": "il cameriere / la cameriera",
+      "en": "waiter / waitress",
+      "note": "To call them: “scusi!” works. Snapping your fingers does too — if you want to become the village's main character."
+    },
+    {
+      "id": "cib_013",
+      "level": "A1",
+      "it": "la colazione",
+      "en": "breakfast",
+      "note": "Italian breakfast is sweet: cappuccino + cornetto. Eggs at 8am will get you looks of pure anthropological curiosity."
+    },
+    {
+      "id": "cib_014",
+      "level": "A1",
+      "it": "il pranzo",
+      "en": "lunch",
+      "ex": "Pranziamo insieme?",
+      "exEn": "Shall we have lunch together?"
+    },
+    {
+      "id": "cib_015",
+      "level": "A1",
+      "it": "la cena",
+      "en": "dinner",
+      "ex": "A cena alle otto?",
+      "exEn": "Dinner at eight?"
+    }
+  ]
+}

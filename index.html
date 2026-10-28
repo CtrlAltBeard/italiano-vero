@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Italiano Vero — Flashcards & Quiz</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<div class="tricolore"></div>
+<header>
+  <div class="brand-row">
+    <div>
+      <h1>Italiano <em>Vero</em></h1>
+      <p class="subtitle">Real Italian, curated by an actual native speaker. No owls, no hearts, no ads.</p>
+    </div>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">🌙 Dark mode</button>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HOME ============ -->
+  <section id="view-home">
+    <div class="mode-wrap">
+      <span class="mode-label">Pick your poison</span>
+      <div class="segmented" role="tablist">
+        <button id="modeFlash" class="active" type="button">🎴 Flashcards</button>
+        <button id="modeQuiz" type="button">🎯 Quiz</button>
+      </div>
+      <span class="mode-label">Livello</span>
+      <div class="segmented" id="levelSeg"></div>
+    </div>
+    <div class="mode-wrap" id="quizLenWrap" hidden>
+      <span class="mode-label">Domande</span>
+      <div class="segmented" id="quizLenSeg"></div>
+    </div>
+    <div class="grid" id="catGrid"></div>
+  </section>
+
+  <!-- ============ FLASHCARDS ============ -->
+  <section id="view-deck" hidden>
+    <div class="toolbar">
+      <h2 id="deckTitle">Deck</h2>
+      <div style="display:flex; gap:14px; align-items:center; flex-wrap:wrap;">
+        <label class="check-label"><input type="checkbox" id="hideMastered" /> Hide mastered</label>
+        <button class="btn ghost" id="deckHome">← Categories</button>
+      </div>
+    </div>
+    <div class="progress"><span id="deckProgress" style="width:0%"></span></div>
+    <div class="flip-scene">
+      <div class="flashcard" id="flashcard" role="button" tabindex="0" aria-label="Flashcard, click to flip">
+        <div class="card-face front">
+          <div class="card-tag">Italiano</div>
+          <div class="card-italian" id="cardFront"></div>
+          <div class="card-hint">Click to reveal — or press Space</div>
+        </div>
+        <div class="card-face back">
+          <div class="card-tag">English</div>
+          <div class="card-english" id="cardBack"></div>
+          <div class="card-example" id="cardExample"></div>
+          <div class="native-tip" id="cardTip"></div>
+        </div>
+      </div>
+    </div>
+    <div class="deck-controls">
+      <button class="btn" id="btnPrev">← Indietro</button>
+      <button class="btn primary" id="btnMastered">La so 💪</button>
+      <button class="btn" id="btnReview">Da rivedere 🔄</button>
+      <button class="btn" id="btnNext">Avanti →</button>
+    </div>
+    <p class="counter" id="deckCounter"></p>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section id="view-quiz" hidden>
+    <div class="toolbar">
+      <h2 id="quizTitle">Quiz</h2>
+      <button class="btn ghost" id="quizHome">← Categories</button>
+    </div>
+    <div class="progress"><span id="quizProgress" style="width:0%"></span></div>
+    <div class="quiz-panel" id="quizPanel"></div>
+  </section>
+</main>
+
+<footer>
+  Built with amore. Vocabulary checked by someone who says “boh” daily. v0.4 MVP
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

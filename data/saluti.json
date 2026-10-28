@@ -1,0 +1,117 @@
+{
+  "id": "saluti",
+  "emoji": "🤝",
+  "name": "Saluti & Cortesia",
+  "desc": "Greetings, courtesy and the magic words",
+  "level": "A1",
+  "vocabulary": [
+    {
+      "id": "sal_001",
+      "level": "A1",
+      "it": "ciao",
+      "en": "hi / bye (informal)",
+      "ex": "Ciao, come stai?",
+      "exEn": "Hi, how are you?",
+      "note": "Works for hello AND goodbye — but only with people you're on informal terms with. Saying it to a stranger is... a choice."
+    },
+    {
+      "id": "sal_002",
+      "level": "A1",
+      "it": "buongiorno",
+      "en": "good morning / hello (daytime)",
+      "ex": "Buongiorno, signora!",
+      "exEn": "Good morning, ma'am!"
+    },
+    {
+      "id": "sal_003",
+      "level": "A1",
+      "it": "buonasera",
+      "en": "good evening / hello (evening)",
+      "ex": "Buonasera, un tavolo per due?",
+      "exEn": "Good evening, a table for two?"
+    },
+    {
+      "id": "sal_004",
+      "level": "A1",
+      "it": "buona notte",
+      "en": "good night (when leaving to sleep)",
+      "note": "You say this when going to bed — NOT to greet someone at 9pm. Greeting with it marks you as a tourist faster than socks with sandals."
+    },
+    {
+      "id": "sal_005",
+      "level": "A1",
+      "it": "salve",
+      "en": "hello (neutral, semi-formal)",
+      "note": "The social safety net. Not too stiff, not too familiar. Perfect with strangers. Italians use it constantly; textbooks teach it rarely."
+    },
+    {
+      "id": "sal_006",
+      "level": "A1",
+      "it": "arrivederci",
+      "en": "goodbye (formal)",
+      "ex": "Arrivederci e grazie di tutto!",
+      "exEn": "Goodbye and thanks for everything!"
+    },
+    {
+      "id": "sal_007",
+      "level": "A1",
+      "it": "a presto",
+      "en": "see you soon",
+      "ex": "Ciao, a presto!",
+      "exEn": "Bye, see you soon!"
+    },
+    {
+      "id": "sal_008",
+      "level": "A1",
+      "it": "come stai?",
+      "en": "how are you? (informal)",
+      "note": "With strangers or elders: “come sta?”. Getting the formal/informal choice right earns silent respect."
+    },
+    {
+      "id": "sal_009",
+      "level": "A1",
+      "it": "sto bene, grazie",
+      "en": "I'm well, thanks",
+      "note": "A touch more honest and very common: “non c'è male” — not bad, can't complain."
+    },
+    {
+      "id": "sal_010",
+      "level": "A1",
+      "it": "grazie mille",
+      "en": "thanks a million",
+      "ex": "Grazie mille per l'aiuto!",
+      "exEn": "Thanks a million for the help!"
+    },
+    {
+      "id": "sal_011",
+      "level": "A1",
+      "it": "prego",
+      "en": "you're welcome",
+      "note": "The multi-tool of Italian: you're welcome, come in, after you, help yourself. One word, four situations, zero stress."
+    },
+    {
+      "id": "sal_012",
+      "level": "A1",
+      "it": "per favore",
+      "en": "please",
+      "ex": "Un caffè, per favore.",
+      "exEn": "A coffee, please.",
+      "note": "Polite alternative: “per piacere”. Both make you sound raised right."
+    },
+    {
+      "id": "sal_013",
+      "level": "A1",
+      "it": "scusa / scusi",
+      "en": "excuse me / sorry (informal / formal)",
+      "note": "Scusa with friends, scusi with everyone else. Also how you get a waiter's attention without shouting."
+    },
+    {
+      "id": "sal_014",
+      "level": "A1",
+      "it": "piacere",
+      "en": "nice to meet you",
+      "ex": "Piacere, mi chiamo Marco.",
+      "exEn": "Nice to meet you, my name is Marco."
+    }
+  ]
+}

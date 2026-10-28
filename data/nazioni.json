@@ -1,0 +1,110 @@
+{
+  "id": "nazioni",
+  "emoji": "🗺️",
+  "name": "Nazionalità e Paesi",
+  "desc": "Where you're from and who you are",
+  "level": "A1",
+  "vocabulary": [
+    {
+      "id": "naz_001",
+      "level": "A1",
+      "it": "italiano / italiana",
+      "en": "Italian (m / f)",
+      "ex": "Lei è italiana, di Roma.",
+      "exEn": "She's Italian, from Rome.",
+      "note": "The adjective matches YOUR gender, not the listener's. Ending in -o if you're male, -a if you're female. Democracy in grammar form."
+    },
+    {
+      "id": "naz_002",
+      "level": "A1",
+      "it": "inglese",
+      "en": "English",
+      "note": "Adjectives in -ese are gender-neutral: inglese, francese, belga-style peace of mind. One ending, zero drama."
+    },
+    {
+      "id": "naz_003",
+      "level": "A1",
+      "it": "spagnolo / spagnola",
+      "en": "Spanish (m / f)"
+    },
+    {
+      "id": "naz_004",
+      "level": "A1",
+      "it": "francese",
+      "en": "French"
+    },
+    {
+      "id": "naz_005",
+      "level": "A1",
+      "it": "tedesco / tedesca",
+      "en": "German (m / f)",
+      "ex": "Non sono inglese, sono tedesco.",
+      "exEn": "I'm not English, I'm German."
+    },
+    {
+      "id": "naz_006",
+      "level": "A1",
+      "it": "americano / americana",
+      "en": "American (m / f)",
+      "note": "The proper adjective for the country is “statunitense”, but real people say “americano”. Fight us, geographers."
+    },
+    {
+      "id": "naz_007",
+      "level": "A1",
+      "it": "belga",
+      "en": "Belgian (m or f)",
+      "note": "Same ending for both genders — Belgium gives you three languages and one easy adjective. Fair trade."
+    },
+    {
+      "id": "naz_008",
+      "level": "A1",
+      "it": "olandese",
+      "en": "Dutch",
+      "note": "Careful: “olandese” is from Holland. The whole country is “i Paesi Bassi”. Dutch people appreciate the distinction. A bit."
+    },
+    {
+      "id": "naz_009",
+      "level": "A1",
+      "it": "Da dove vieni?",
+      "en": "Where are you from? (informal)",
+      "note": "Formal version: “Di dov'è, Lei?”. Answer with “Sono di...” + city. No article, no stress."
+    },
+    {
+      "id": "naz_010",
+      "level": "A1",
+      "it": "Sono di...",
+      "en": "I'm from...",
+      "ex": "Sono di Roma, e tu?",
+      "exEn": "I'm from Rome, and you?",
+      "note": "For countries instead of cities: “Vengo dalla Francia” (from France), “Vivo in Italia” (I live in Italy). Prepositions are the final boss of Italian."
+    },
+    {
+      "id": "naz_011",
+      "level": "A1",
+      "it": "l'Italia",
+      "en": "Italy",
+      "note": "Country names love articles: l'Italia, la Francia, il Belgio. But with “in” the article vanishes: “Vivo in Italia”. Grammar has trust issues."
+    },
+    {
+      "id": "naz_012",
+      "level": "A1",
+      "it": "il Belgio",
+      "en": "Belgium",
+      "note": "Yes, the article is mandatory: “il Belgio”, not just “Belgio”. Tiny country, tiny rules."
+    },
+    {
+      "id": "naz_013",
+      "level": "A2",
+      "it": "gli Stati Uniti",
+      "en": "the United States",
+      "note": "Plural country, plural everything: “Sono andato negli Stati Uniti”. Even the preposition gets complicated. Very American."
+    },
+    {
+      "id": "naz_014",
+      "level": "A2",
+      "it": "il Regno Unito",
+      "en": "the United Kingdom",
+      "note": "A Brit is “britannico” — a precise, slightly formal word. “Inglese” is the everyday shortcut, the Welsh forgive no one."
+    }
+  ]
+}

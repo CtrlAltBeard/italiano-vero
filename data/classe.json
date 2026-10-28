@@ -1,0 +1,96 @@
+{
+  "id": "classe",
+  "emoji": "🎒",
+  "name": "In Classe",
+  "desc": "Classroom survival phrases — ask, repeat, survive",
+  "level": "A1",
+  "vocabulary": [
+    {
+      "id": "cla_001",
+      "level": "A1",
+      "it": "non capisco",
+      "en": "I don't understand",
+      "ex": "Scusa, non capisco. Puoi ripetere?",
+      "exEn": "Sorry, I don't understand. Can you repeat?"
+    },
+    {
+      "id": "cla_002",
+      "level": "A1",
+      "it": "come, scusa?",
+      "en": "sorry, what? (informal)",
+      "note": "Formal: “come, scusi?”. The Italian way of saying “I heard you, I just refuse to process it”."
+    },
+    {
+      "id": "cla_003",
+      "level": "A1",
+      "it": "come si dice...?",
+      "en": "how do you say...?",
+      "ex": "Come si dice “laptop” in italiano?",
+      "exEn": "How do you say “laptop” in Italian?",
+      "note": "The single most useful question in any language class. Italians will answer with joy — we love explaining Italian. Sometimes too much."
+    },
+    {
+      "id": "cla_004",
+      "level": "A1",
+      "it": "come si scrive?",
+      "en": "how is it spelled?",
+      "ex": "Come si scrive “cappuccino”?",
+      "exEn": "How do you spell “cappuccino”?"
+    },
+    {
+      "id": "cla_005",
+      "level": "A1",
+      "it": "che vuol dire?",
+      "en": "what does it mean?",
+      "note": "Literally “what does it want to say” — yes, words have opinions in Italian. Polite twin: “cosa significa?”."
+    },
+    {
+      "id": "cla_006",
+      "level": "A1",
+      "it": "puoi ripetere, per favore?",
+      "en": "can you repeat, please?",
+      "note": "Formal: “può ripetere?”. You will need this. Everyone needs this. Even natives use it when grandpa mumbles."
+    },
+    {
+      "id": "cla_007",
+      "level": "A1",
+      "it": "più lentamente, per favore",
+      "en": "slower, please",
+      "note": "Italians speak fast with their hands full. This phrase is a survival skill, not a weakness."
+    },
+    {
+      "id": "cla_008",
+      "level": "A1",
+      "it": "come ti chiami?",
+      "en": "what's your name? (informal)",
+      "note": "Formal: “Lei come si chiama?”. The book drills this for a reason — introductions open every door in Italy."
+    },
+    {
+      "id": "cla_009",
+      "level": "A1",
+      "it": "ho una domanda",
+      "en": "I have a question"
+    },
+    {
+      "id": "cla_010",
+      "level": "A1",
+      "it": "non lo so",
+      "en": "I don't know",
+      "note": "Pair it with “boh!” from Modi di dire for maximum Italian effect. Shrugging is not required but strongly encouraged."
+    },
+    {
+      "id": "cla_011",
+      "level": "A1",
+      "it": "la lezione",
+      "en": "the lesson",
+      "note": "Always feminine, like “informazione” and “attenzione”. Nouns in -zione are feminine without exception — one rule Italy actually keeps."
+    },
+    {
+      "id": "cla_012",
+      "level": "A1",
+      "it": "il compito / i compiti",
+      "en": "homework / homework (plural)",
+      "note": "“I compiti” — always plural, like the sighing that accompanies them. “Devo fare i compiti” = I have to do my homework."
+    }
+  ]
+}
