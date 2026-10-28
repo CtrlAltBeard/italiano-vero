@@ -1,5 +1,5 @@
 /* =========================================================
-   ITALIANO VERO — v0.3 (modular)
+   ITALIANO VERO — v0.4 (modular)
    index.html = markup · css/styles.css = design
    data/manifest.json + data/<category>.json = vocabulary (edit THESE, not the code)
    js/app.js = you are here.
