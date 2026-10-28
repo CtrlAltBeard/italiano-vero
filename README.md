@@ -4,7 +4,7 @@
 
 A free learning site for real Italian — flashcards and quizzes with the *modi di dire*, the slang, and the tips no textbook will tell you (like why you never answer *"grazie"* to *"in bocca al lupo"*). Built by a native speaker, for one very specific learner first (ciao, amore 💘) and for everyone else second.
 
-**🎓 Use it here:** [https://ctrlaltbeard.github.io/italian-vero/](https://ctrlaltbeard.github.io/italiano-vero/)
+**🎓 Use it here:** [https://CtrlAltBeard.github.io/italiano-vero/](https://ctrlaltbeard.github.io/italiano-vero/)
 
 No install, no account, no app store. Bookmark the link and you're learning.
 
