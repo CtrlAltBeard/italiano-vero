@@ -1,5 +1,5 @@
 /* =========================================================
-   ITALIANO VERO — v0.6 (modular)
+   ITALIANO VERO — v0.7 (modular)
    index.html = markup · css/styles.css = design
    data/manifest.json + data/<category>.json = vocabulary (edit THESE, not the code)
    js/app.js = you are here.
@@ -413,12 +413,19 @@ function levenshtein(a, b) {
   }
   return prev[n];
 }
-/* "il pane" → ["pane"]; "tedesco / tedesca" → both accepted, article stripped */
-function writeTargets(item) {
-  return item.it
-    .split("/")
-    .map((s) => normalize(s.replace(/^(il|lo|la|l'|i|gli|le|un|uno|una|un')\s+/i, "")))
-    .filter(Boolean);
+const stripArticle = (s) => s.replace(/^(il|lo|la|l'|i|gli|le|un|uno|una|un')\s+/i, "");
+/* every accepted surface form of the answer: full ("un quarto"), stripped ("quarto"),
+   and every slash-alternative ("tedesco / tedesca"). The learner's input gets the
+   same stripping applied, so typing with or without the article both work. */
+function writeForms(item) {
+  const forms = new Set();
+  item.it.split("/").forEach((part) => {
+    const full = normalize(part);
+    if (!full) return;
+    forms.add(full);
+    forms.add(normalize(stripArticle(part)));
+  });
+  return [...forms];
 }
 
 function startWrite(catId) {
@@ -460,16 +467,15 @@ function renderWriteQuestion() {
   const input = $("#writeInput");
   input.focus();
   $("#writeCheck").addEventListener("click", (e) => { e.stopPropagation(); checkWrite(); });
+  /* Enter submits; after that ONLY the Avanti button moves you on —
+     take all the time you need with the feedback */
   input.addEventListener("keydown", (e) => {
-    if (e.key === "Enter") {
+    if (e.key === "Enter" && !write.locked) {
       e.preventDefault();
-      e.stopPropagation(); /* don't let the global handler double-fire */
-      if (write.locked) advanceWrite();
-      else checkWrite();
+      e.stopPropagation();
+      checkWrite();
     }
   });
-  /* after checking, click anywhere on the panel to move on */
-  panel.addEventListener("click", () => { if (write && write.locked) advanceWrite(); });
   $("#writeProgress").style.width = (write.idx / write.questions.length) * 100 + "%";
 }
 
@@ -477,21 +483,21 @@ function checkWrite() {
   if (write.locked) return;
   write.locked = true;
   const item = write.questions[write.idx];
-  const targets = writeTargets(item);
-  const norm = normalize($("#writeInput").value);
+  const forms = writeForms(item);
+  const typed = normalize($("#writeInput").value);
+  const typedStripped = normalize(stripArticle(typed));
   const input = $("#writeInput");
   let msg, ok = false;
-  if (!norm) {
+  if (!typed) {
     msg = "You left it blank. Coraggio!";
-  } else if (targets.includes(norm)) {
+  } else if (forms.includes(typed) || (typedStripped && forms.includes(typedStripped))) {
     ok = true;
     msg = PRAISE[Math.floor(Math.random() * PRAISE.length)];
-  } else if (targets.some((t) => stripAccents(t) === stripAccents(norm))) {
+  } else if (forms.some((f) => stripAccents(f) === stripAccents(typed) || (typedStripped && stripAccents(f) === stripAccents(typedStripped)))) {
     msg = "Quasi! Only the accent betrayed you — caffè, città, però… accents are spelling too.";
   } else {
-    const dist = Math.min(...targets.map((t) => levenshtein(norm, t)));
-    const longest = Math.max(...targets.map((t) => t.length));
-    msg = dist <= (longest > 7 ? 2 : 1)
+    const dist = Math.min(...forms.map((f) => levenshtein(typedStripped || typed, f)));
+    msg = dist <= (item.it.length > 12 ? 2 : 1)
       ? "Quasi! Very close — check your spelling:"
       : "Non ancora. The word was:";
   }
@@ -506,6 +512,7 @@ function checkWrite() {
   b.className = "btn primary";
   b.type = "button";
   b.textContent = last ? "Vedi risultati 🏁" : "Avanti →";
+  b.addEventListener("click", advanceWrite);
   next.appendChild(b);
 }
 
@@ -547,13 +554,6 @@ document.addEventListener("keydown", (e) => {
     if (!quiz.locked && ["1", "2", "3", "4"].includes(e.key)) {
       const opt = document.querySelectorAll(".option")[Number(e.key) - 1];
       if (opt) opt.click();
-    }
-  }
-  if (!$("#view-write").hidden && write) {
-    /* the input handles its own Enter; only act when focus is elsewhere */
-    if (e.target.tagName !== "INPUT" && write.locked && (e.key === "Enter" || e.key === " ")) {
-      e.preventDefault();
-      advanceWrite();
     }
   }
 });
