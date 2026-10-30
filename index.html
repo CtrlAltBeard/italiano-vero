@@ -26,6 +26,7 @@
       <div class="segmented" role="tablist">
         <button id="modeFlash" class="active" type="button">🎴 Flashcards</button>
         <button id="modeQuiz" type="button">🎯 Quiz</button>
+        <button id="modeWrite" type="button">✍️ Scrivere</button>
       </div>
       <span class="mode-label">Livello</span>
       <div class="segmented" id="levelSeg"></div>
@@ -80,10 +81,20 @@
     <div class="progress"><span id="quizProgress" style="width:0%"></span></div>
     <div class="quiz-panel" id="quizPanel"></div>
   </section>
+
+  <!-- ============ SCRIVERE (writing drill) ============ -->
+  <section id="view-write" hidden>
+    <div class="toolbar">
+      <h2 id="writeTitle">Scrivere</h2>
+      <button class="btn ghost" id="writeHome">← Categories</button>
+    </div>
+    <div class="progress"><span id="writeProgress" style="width:0%"></span></div>
+    <div class="quiz-panel" id="writePanel"></div>
+  </section>
 </main>
 
 <footer>
-  Built with amore. Vocabulary checked by someone who says “boh” daily. v0.4 MVP
+  Built with amore. Vocabulary checked by someone who says “boh” daily. v0.6 — level filters, mega quiz &amp; Scrivere
 </footer>
 
 <script src="js/app.js"></script>

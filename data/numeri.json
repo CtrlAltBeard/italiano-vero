@@ -146,3 +146,15 @@
     }
   ]
 }
+    { "id": "num_021", "level": "B1", "it": "duecento", "en": "two hundred", "ex": "Il libro costa duecento euro.", "exEn": "The book costs two hundred euros.", "note": "Cento never takes a plural — duecento, trecento, quattrocento… compound and done." },
+    { "id": "num_022", "level": "B1", "it": "duemila", "en": "two thousand", "ex": "La macchina costa duemila euro.", "exEn": "The car costs two thousand euros.", "note": "Mille turns into -mila when it teams up: duemila, tremila, diecimila. Never 'due mille'." },
+    { "id": "num_023", "level": "B1", "it": "centinaia di", "en": "hundreds of", "ex": "Centinaia di persone alla festa.", "exEn": "Hundreds of people at the party.", "note": "centinaio → centinaia, migliaio → migliaia. The 'di' is not optional." },
+    { "id": "num_024", "level": "B1", "it": "migliaia di", "en": "thousands of", "ex": "Migliaia di turisti in estate.", "exEn": "Thousands of tourists in summer.", "note": "Same pattern as centinaia — singular for the vague number, plural form for 'of them'." },
+    { "id": "num_025", "level": "B1", "it": "un milione", "en": "a million", "ex": "Un milione di euro, per favore.", "exEn": "One million euros, please.", "note": "Milione has a plural: due milioni. And it keeps its 'di': un milione di persone." },
+    { "id": "num_026", "level": "B2", "it": "un miliardo", "en": "a billion", "ex": "L'azienda vale un miliardo.", "exEn": "The company is worth a billion.", "note": "The classic trap: English 'billion' is miliardo, NOT 'bilione'. Bilione technically means a million millions and nobody uses it. Say miliardo." },
+    { "id": "num_027", "level": "B2", "it": "un quarto", "en": "a quarter", "ex": "È l'una e un quarto.", "exEn": "It's a quarter past one.", "note": "Telling time out loud: le due e mezza, le tre e un quarto. Nobody says 'le 14:30' with their mouth." },
+    { "id": "num_028", "level": "C1", "it": "mezzo / mezza", "en": "half", "ex": "Vorrei mezza pizza, per favore.", "exEn": "I'd like half a pizza, please.", "note": "Before a noun: mezzo/mezza (mezzo litro, mezza pizza). On its own: la metà." },
+    { "id": "num_029", "level": "C1", "it": "la metà", "en": "half (of it)", "ex": "Ho letto la metà del libro.", "exEn": "I've read half the book.", "note": "La metà di — 'half of'. Mezza pizza on the menu, la metà when you're bragging about progress." },
+    { "id": "num_030", "level": "C1", "it": "il doppio", "en": "double / twice as much", "ex": "Ci vuole il doppio del tempo.", "exEn": "It takes twice as long.", "note": "Il doppio di — 'double the'. Works for time, quantities, and excuses." },
+    { "id": "num_031", "level": "C1", "it": "circa", "en": "about / approximately", "ex": "Eravamo una ventina circa.", "exEn": "We were about twenty or so.", "note": "Can float after the number too: 'venti persone circa'. Very Italian vagueness." },
+    { "id": "num_032", "level": "C1", "it": "un paio", "en": "a couple (of)", "ex": "Ci vediamo tra un paio di giorni.", "exEn": "See you in a couple of days.", "note": "'Un paio di' is delightfully vague — could be two, could be five. Nobody counts." }

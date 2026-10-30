@@ -1,0 +1,29 @@
+{
+  "id": "feste",
+  "emoji": "🎃",
+  "name": "Feste & Festività",
+  "desc": "Holidays, from dolcetto o scherzetto to the Befana",
+  "level": "A1–B2",
+  "vocabulary": [
+    { "id": "fes_001", "level": "A1", "it": "la festa", "en": "the party / the celebration", "ex": "La festa di Halloween è venerdì.", "exEn": "The Halloween party is on Friday.", "note": "One word covers party AND holiday — context does the work." },
+    { "id": "fes_002", "level": "A1", "it": "il regalo", "en": "the gift / present", "ex": "Questo regalo è per te.", "exEn": "This gift is for you.", "note": null },
+    { "id": "fes_003", "level": "A2", "it": "la zucca", "en": "the pumpkin", "ex": "Abbiamo intagliato la zucca.", "exEn": "We carved the pumpkin.", "note": "Pumpkin-carving is an American import, but it's been fully adopted — like Halloween itself." },
+    { "id": "fes_004", "level": "A2", "it": "la strega", "en": "the witch", "ex": "La strega vola sulla scopa.", "exEn": "The witch flies on the broom.", "note": null },
+    { "id": "fes_005", "level": "A2", "it": "il fantasma", "en": "the ghost", "ex": "C'è un fantasma in soffitta!", "exEn": "There's a ghost in the attic!", "note": "Masculine despite ending in -a: il fantasma. Italian gender rules love a haunting." },
+    { "id": "fes_006", "level": "A2", "it": "il dolcetto", "en": "the treat (little sweet)", "ex": "Dolcetto o scherzetto!", "exEn": "Trick or treat!", "note": "A dolcetto is any little sweet — the Halloween phrase is the only place most Italians meet it." },
+    { "id": "fes_007", "level": "A2", "it": "lo scherzo", "en": "the prank / the trick", "ex": "Mi hai fatto uno scherzo!", "exEn": "You played a prank on me!", "note": "Also the reply to a compliment you don't take seriously: 'Scherzo!' = just kidding." },
+    { "id": "fes_008", "level": "B1", "it": "mascherarsi", "en": "to dress up (in a costume)", "ex": "I bambini si mascherano da streghe.", "exEn": "The kids dress up as witches.", "note": "Reflexive, and 'da' for what you're dressed as: mascherarsi da zombie." },
+    { "id": "fes_009", "level": "A1", "it": "il Natale", "en": "Christmas", "ex": "Buon Natale a tutti!", "exEn": "Merry Christmas, everyone!", "note": "Il Natale with the article in a sentence, but 'Buon Natale' without — greetings drop it." },
+    { "id": "fes_010", "level": "A2", "it": "l'albero di Natale", "en": "the Christmas tree", "ex": "Decoriamo l'albero di Natale.", "exEn": "We're decorating the Christmas tree.", "note": null },
+    { "id": "fes_011", "level": "A1", "it": "Babbo Natale", "en": "Santa Claus", "ex": "Babbo Natale porta i regali.", "exEn": "Santa brings the presents.", "note": "Babbo, not 'Santa' — Santa is a saint in Italy, and she doesn't do deliveries." },
+    { "id": "fes_012", "level": "B1", "it": "la vigilia", "en": "the eve (Christmas Eve)", "ex": "La vigilia si mangia pesce.", "exEn": "On Christmas Eve you eat fish.", "note": "Meat-free fish dinner on the 24th — a tradition enforced with more rigor than most laws." },
+    { "id": "fes_013", "level": "A2", "it": "il panettone", "en": "the Milanese Christmas cake", "ex": "Preferisci il panettone o il pandoro?", "exEn": "Do you prefer panettone or pandoro?", "note": "The December war: candied fruit (panettone) vs plain buttery (pandoro). Choosing a side is mandatory." },
+    { "id": "fes_014", "level": "B1", "it": "il presepe", "en": "the nativity scene", "ex": "A Napoli il presepe è un'arte.", "exEn": "In Naples the nativity scene is an art form.", "note": "Neapolitan presepi include artisan figurines of literally everyone — politicians included." },
+    { "id": "fes_015", "level": "A2", "it": "il Capodanno", "en": "New Year's Eve / New Year's Day", "ex": "Buon anno e buon Capodanno!", "exEn": "Happy New Year!", "note": "Capo-danno: 'head of the year'. Covers both the night and the day." },
+    { "id": "fes_016", "level": "B2", "it": "le lenticchie", "en": "the lentils", "ex": "Lenticchie e cotechino a mezzanotte.", "exEn": "Lentils and cotechino at midnight.", "note": "Eating lentils at midnight on NYE brings money — they look like little coins. Tradition, not superstition. Allegedly." },
+    { "id": "fes_017", "level": "B1", "it": "i fuochi d'artificio", "en": "the fireworks", "ex": "I fuochi d'artificio a mezzanotte.", "exEn": "The fireworks at midnight.", "note": null },
+    { "id": "fes_018", "level": "A2", "it": "l'anno nuovo", "en": "the new year", "ex": "Felice anno nuovo!", "exEn": "Happy new year!", "note": null },
+    { "id": "fes_019", "level": "B2", "it": "gli auguri", "en": "the wishes / greetings", "ex": "Tanti auguri! Buon Natale!", "exEn": "Best wishes! Merry Christmas!", "note": "Auguri works for everything: Christmas, birthdays, a new house. The universal Italian greeting card." },
+    { "id": "fes_020", "level": "C1", "it": "la Befana", "en": "the Epiphany witch (Jan 6)", "ex": "La Befana viene la notte del 6 gennaio.", "exEn": "The Befana comes on the night of January 6th.", "note": "An old lady on a broom who fills stockings with sweets — or coal, if you were naughty. Slightly terrifying, deeply Italian." }
+  ]
+}

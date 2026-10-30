@@ -150,6 +150,19 @@ main { max-width: 980px; margin: 0 auto; padding: 16px 20px 40px; }
 .quiz-feedback { min-height: 24px; text-align: center; margin-top: 14px; font-size: 0.95rem; color: var(--muted); font-style: italic; }
 .quiz-next { display: flex; justify-content: center; margin-top: 16px; }
 
+/* ============ Scrivere (writing drill) ============ */
+.write-input {
+  width: 100%; border: 1px solid var(--border); background: var(--bg); color: var(--text);
+  border-radius: 12px; padding: 14px 16px; font-size: 1.15rem; font-family: var(--serif);
+  text-align: center; outline: none;
+}
+.write-input:focus { border-color: var(--green); box-shadow: var(--shadow); }
+.write-input:disabled { cursor: default; }
+.write-input.correct { background: var(--green-soft); border-color: var(--green); color: var(--green); font-weight: 700; }
+.write-input.wrong { background: var(--red-soft); border-color: var(--red); color: var(--red); }
+.write-answer { text-align: center; margin-top: 12px; font-size: 0.95rem; color: var(--muted); line-height: 1.5; }
+.write-answer b:first-child { font-family: var(--serif); font-size: 1.3rem; color: var(--green); }
+
 /* ============ Results ============ */
 .results { max-width: 480px; margin: 20px auto; text-align: center; background: var(--card); border: 1px solid var(--border); border-radius: 18px; padding: 40px 28px; box-shadow: var(--shadow-lift); }
 .results .score { font-family: var(--serif); font-size: 3rem; font-weight: 700; color: var(--green); }

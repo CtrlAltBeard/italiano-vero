@@ -128,3 +128,17 @@
     }
   ]
 }
+    { "id": "cib_016", "level": "A2", "it": "il pomodoro", "en": "the tomato", "ex": "Una pasta al pomodoro, per favore.", "exEn": "A pasta with tomato sauce, please.", "note": "Pomodoro = pomo d'oro, 'golden apple'. The things etymology gives you." },
+    { "id": "cib_017", "level": "A2", "it": "la carne", "en": "the meat", "ex": "Non mangio carne.", "exEn": "I don't eat meat.", "note": null },
+    { "id": "cib_018", "level": "A2", "it": "il pesce", "en": "the fish", "ex": "Stasera mangiamo pesce.", "exEn": "Tonight we're eating fish.", "note": "On Christmas Eve, fish is mandatory — see la vigilia in Feste." },
+    { "id": "cib_019", "level": "A2", "it": "la verdura", "en": "the vegetables", "ex": "Mangia più verdura!", "exEn": "Eat more vegetables!", "note": "Verdura is singular in everyday Italian — 'le verdure' exists but the market says verdura." },
+    { "id": "cib_020", "level": "A2", "it": "la frutta", "en": "the fruit", "ex": "La frutta fa bene.", "exEn": "Fruit is good for you.", "note": null },
+    { "id": "cib_021", "level": "A2", "it": "il dolce", "en": "the dessert / something sweet", "ex": "Vuoi un dolce?", "exEn": "Do you want something sweet?", "note": "One word, two jobs: the dessert course and the sweet taste. Il dolce far niente is neither, but it's the best one." },
+    { "id": "cib_022", "level": "B1", "it": "il prosciutto", "en": "the ham", "ex": "Prosciutto crudo o cotto?", "exEn": "Raw or cooked ham?", "note": "Crudo = the cured parma-style one, cotto = boiled sandwich ham. Ordering the wrong one is a rite of passage." },
+    { "id": "cib_023", "level": "B1", "it": "la mozzarella", "en": "the mozzarella", "ex": "Una caprese con mozzarella di bufala.", "exEn": "A caprese with buffalo mozzarella.", "note": "Di bufala vs normale: Italians have opinions. Strong, loud ones." },
+    { "id": "cib_024", "level": "B1", "it": "l'olio d'oliva", "en": "the olive oil", "ex": "Condiamo l'insalata con olio d'oliva.", "exEn": "We dress the salad with olive oil.", "note": "At the table just say 'l'olio' — nobody drizzles anything else on their pinzimonio." },
+    { "id": "cib_025", "level": "B1", "it": "il parmigiano", "en": "the parmesan", "ex": "Un po' di parmigiano sulla pasta?", "exEn": "A bit of parmesan on the pasta?", "note": "Real deal: Parmigiano Reggiano. 'Grana' is the cheaper cousin — fine, but be honest about it." },
+    { "id": "cib_026", "level": "B1", "it": "da portare via", "en": "to take away", "ex": "Un caffè da portare via, grazie.", "exEn": "A takeaway coffee, please.", "note": "'Da asporto' is understood but sounds like a supermarket. Humans say da portare via." },
+    { "id": "cib_027", "level": "B1", "it": "il piatto", "en": "the dish / the plate", "ex": "Il piatto del giorno è la carbonara.", "exEn": "Today's special is carbonara.", "note": "A proper meal goes primo, secondo, contorno, dolce. Asking for everything at once marks you as a tourist." },
+    { "id": "cib_028", "level": "B2", "it": "avere fame", "en": "to be hungry (lit. 'to have hunger')", "ex": "Ho una fame!", "exEn": "I'm starving!", "note": "Italians HAVE hunger, they don't BE it: ho fame, hai fame. Same trick with thirst: ho sete." },
+    { "id": "cib_029", "level": "B2", "it": "avere sete", "en": "to be thirsty (lit. 'to have thirst')", "ex": "Hai sete? Ti porto un'acqua.", "exEn": "Are you thirsty? I'll get you a water.", "note": null }

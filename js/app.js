@@ -1,5 +1,5 @@
 /* =========================================================
-   ITALIANO VERO — v0.4 (modular)
+   ITALIANO VERO — v0.6 (modular)
    index.html = markup · css/styles.css = design
    data/manifest.json + data/<category>.json = vocabulary (edit THESE, not the code)
    js/app.js = you are here.
@@ -36,6 +36,7 @@ try { mastered = new Set(JSON.parse(store.get("iv_mastered") || "[]")); } catch 
 let mode = "flash";
 let deck = { items: [], idx: 0, catId: null, hideMastered: false };
 let quiz = null;
+let write = null;  /* writing drill ("Scrivere") state */
 
 /* "Tutto" is synthesized, not stored — it's just "every entry" */
 const ALL_CAT = { id: "all", emoji: "🌍", name: "Tutto", desc: "Everything, shuffled. The full meal deal", level: "A1–B1" };
@@ -87,7 +88,7 @@ themeBtn.addEventListener("click", () => {
 
 /* ============ View switching ============ */
 function show(viewId) {
-  ["view-home", "view-deck", "view-quiz"].forEach((id) => {
+  ["view-home", "view-deck", "view-quiz", "view-write"].forEach((id) => {
     $("#" + id).hidden = id !== viewId;
   });
 }
@@ -112,10 +113,10 @@ function renderHome() {
     btn.querySelector(".cat-name").textContent = cat.name;
     btn.querySelector(".cat-desc").textContent = cat.desc;
     btn.querySelector(".chip").textContent = cat.level;
-    btn.querySelector(".cat-count").textContent = levelFilter === "all"
+    btn.querySelector(".cat-count").textContent = activeLevels.size === 0
       ? done + " / " + items.length + " mastered"
-      : items.length + (items.length === 1 ? " card" : " cards") + " at " + levelFilter;
-    btn.addEventListener("click", () => (mode === "flash" ? startDeck(cat.id) : startQuiz(cat.id)));
+      : items.length + (items.length === 1 ? " card" : " cards") + " at " + [...activeLevels].sort().join("+");
+    btn.addEventListener("click", () => (mode === "flash" ? startDeck(cat.id) : mode === "quiz" ? startQuiz(cat.id) : startWrite(cat.id)));
     grid.appendChild(btn);
   });
   show("view-home");
@@ -126,14 +127,17 @@ function setMode(m) {
   mode = m;
   $("#modeFlash").classList.toggle("active", m === "flash");
   $("#modeQuiz").classList.toggle("active", m === "quiz");
-  $("#quizLenWrap").hidden = m !== "quiz";
+  $("#modeWrite").classList.toggle("active", m === "write");
+  /* question count applies to quizzes AND writing drills */
+  $("#quizLenWrap").hidden = m === "flash";
 }
 $("#modeFlash").addEventListener("click", () => setMode("flash"));
 $("#modeQuiz").addEventListener("click", () => setMode("quiz"));
+$("#modeWrite").addEventListener("click", () => setMode("write"));
 
 /* ============ Level & quiz-length filters ============ */
 /* Data-driven: new levels appear as chips automatically as the data grows */
-let levelFilter = "all";
+let activeLevels = new Set();  /* empty set = all levels. Chips toggle membership */
 let quizLen = 10;
 const QUIZ_LENS = [10, 20, 50, 100];
 
@@ -143,14 +147,28 @@ function availableLevels() {
 function renderLevelFilter() {
   const seg = $("#levelSeg");
   seg.innerHTML = "";
-  ["all", ...availableLevels()].forEach((lv) => {
+  const all = document.createElement("button");
+  all.type = "button";
+  all.textContent = "Tutti";
+  all.classList.toggle("active", activeLevels.size === 0);
+  all.addEventListener("click", () => { activeLevels.clear(); refreshAfterLevel(); });
+  seg.appendChild(all);
+  availableLevels().forEach((lv) => {
     const b = document.createElement("button");
     b.type = "button";
-    b.textContent = lv === "all" ? "Tutti" : lv;
-    b.classList.toggle("active", levelFilter === lv);
-    b.addEventListener("click", () => { levelFilter = lv; renderLevelFilter(); });
+    b.textContent = lv;
+    b.classList.toggle("active", activeLevels.has(lv));
+    b.addEventListener("click", () => {
+      if (activeLevels.has(lv)) activeLevels.delete(lv);
+      else activeLevels.add(lv);
+      refreshAfterLevel();
+    });
     seg.appendChild(b);
   });
+}
+function refreshAfterLevel() {
+  renderLevelFilter();
+  renderHome();
 }
 function renderQuizLenFilter() {
   const seg = $("#quizLenSeg");
@@ -165,7 +183,7 @@ function renderQuizLenFilter() {
   });
 }
 function applyLevel(items) {
-  return levelFilter === "all" ? items : items.filter((v) => v.level === levelFilter);
+  return activeLevels.size === 0 ? items : items.filter((v) => activeLevels.has(v.level));
 }
 
 /* ============ Flashcards ============ */
@@ -378,6 +396,146 @@ function renderResults() {
 }
 $("#quizHome").addEventListener("click", renderHome);
 
+/* ============ Scrivere (writing drill) ============ */
+const stripAccents = (s) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+const normalize = (s) => (s || "").toLowerCase().trim().replace(/[.,!?;:'"]/g, "");
+function levenshtein(a, b) {
+  const m = a.length, n = b.length;
+  if (!m) return n;
+  if (!n) return m;
+  let prev = Array.from({ length: n + 1 }, (_, j) => j);
+  for (let i = 1; i <= m; i++) {
+    const curr = [i];
+    for (let j = 1; j <= n; j++) {
+      curr[j] = Math.min(prev[j] + 1, curr[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    }
+    prev = curr;
+  }
+  return prev[n];
+}
+/* "il pane" → ["pane"]; "tedesco / tedesca" → both accepted, article stripped */
+function writeTargets(item) {
+  return item.it
+    .split("/")
+    .map((s) => normalize(s.replace(/^(il|lo|la|l'|i|gli|le|un|uno|una|un')\s+/i, "")))
+    .filter(Boolean);
+}
+
+function startWrite(catId) {
+  const pool = vocabOf(catId);
+  if (!pool.length) {
+    write = null;
+    $("#writeTitle").textContent = catById(catId).name + " — Scrivere";
+    $("#writeProgress").style.width = "0%";
+    $("#writePanel").innerHTML =
+      '<div class="results">' +
+      '<div class="verdict">No cards at this level 🤷</div>' +
+      '<div class="note">Try another level, or pick a different category.</div>' +
+      '<div class="btn-row"><button class="btn" id="writeBackEmpty">← Categories</button></div>' +
+      "</div>";
+    $("#writeBackEmpty").addEventListener("click", renderHome);
+    show("view-write");
+    return;
+  }
+  const picks = shuffle(pool).slice(0, Math.min(quizLen, pool.length));
+  write = { catId, questions: picks, idx: 0, score: 0, locked: false };
+  $("#writeTitle").textContent = catById(catId).name + " — Scrivere";
+  renderWriteQuestion();
+  show("view-write");
+}
+
+function renderWriteQuestion() {
+  const item = write.questions[write.idx];
+  write.locked = false;
+  const panel = $("#writePanel");
+  panel.innerHTML =
+    '<div class="quiz-question-tag">Write it in Italian · ' + (write.idx + 1) + " / " + write.questions.length + "</div>" +
+    '<div class="quiz-question"></div>' +
+    '<input class="write-input" id="writeInput" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Scrivi qui…" />' +
+    '<div class="quiz-next" style="margin-top:14px"><button class="btn primary" id="writeCheck">Controlla ✓</button></div>' +
+    '<div class="quiz-feedback" id="writeFeedback">No multiple choice to save you this time. 🤌</div>' +
+    '<div class="write-answer" id="writeAnswer"></div>' +
+    '<div class="quiz-next" id="writeNext"></div>';
+  panel.querySelector(".quiz-question").textContent = item.en;
+  const input = $("#writeInput");
+  input.focus();
+  $("#writeCheck").addEventListener("click", (e) => { e.stopPropagation(); checkWrite(); });
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      e.stopPropagation(); /* don't let the global handler double-fire */
+      if (write.locked) advanceWrite();
+      else checkWrite();
+    }
+  });
+  /* after checking, click anywhere on the panel to move on */
+  panel.addEventListener("click", () => { if (write && write.locked) advanceWrite(); });
+  $("#writeProgress").style.width = (write.idx / write.questions.length) * 100 + "%";
+}
+
+function checkWrite() {
+  if (write.locked) return;
+  write.locked = true;
+  const item = write.questions[write.idx];
+  const targets = writeTargets(item);
+  const norm = normalize($("#writeInput").value);
+  const input = $("#writeInput");
+  let msg, ok = false;
+  if (!norm) {
+    msg = "You left it blank. Coraggio!";
+  } else if (targets.includes(norm)) {
+    ok = true;
+    msg = PRAISE[Math.floor(Math.random() * PRAISE.length)];
+  } else if (targets.some((t) => stripAccents(t) === stripAccents(norm))) {
+    msg = "Quasi! Only the accent betrayed you — caffè, città, però… accents are spelling too.";
+  } else {
+    const dist = Math.min(...targets.map((t) => levenshtein(norm, t)));
+    const longest = Math.max(...targets.map((t) => t.length));
+    msg = dist <= (longest > 7 ? 2 : 1)
+      ? "Quasi! Very close — check your spelling:"
+      : "Non ancora. The word was:";
+  }
+  if (ok) { write.score++; input.classList.add("correct"); } else { input.classList.add("wrong"); }
+  input.disabled = true;
+  $("#writeCheck").disabled = true;
+  $("#writeFeedback").innerHTML = msg;
+  $("#writeAnswer").innerHTML = "<b>" + item.it + "</b>" + (item.note ? " — <b>Native tip:</b> " + item.note : "");
+  const last = write.idx + 1 >= write.questions.length;
+  const next = $("#writeNext");
+  const b = document.createElement("button");
+  b.className = "btn primary";
+  b.type = "button";
+  b.textContent = last ? "Vedi risultati 🏁" : "Avanti →";
+  next.appendChild(b);
+}
+
+function advanceWrite() {
+  if (!write || !write.locked) return; /* panel click + button click both fire */
+  write.locked = false;
+  write.idx++;
+  if (write.idx >= write.questions.length) renderWriteResults();
+  else renderWriteQuestion();
+}
+
+function renderWriteResults() {
+  $("#writeProgress").style.width = "100%";
+  const pct = Math.round((write.score / write.questions.length) * 100);
+  const panel = $("#writePanel");
+  panel.innerHTML =
+    '<div class="results">' +
+    '<div class="score">' + write.score + " / " + write.questions.length + "</div>" +
+    '<div class="verdict"></div>' +
+    '<div class="note">' + pct + "% — spelling included, and an Italian graded it. You knew the risks.</div>" +
+    '<div class="btn-row">' +
+    '<button class="btn primary" id="writeRetry">Riprova 🔁</button>' +
+    '<button class="btn" id="writeBack">← Categories</button>' +
+    "</div></div>";
+  panel.querySelector(".verdict").textContent = verdict(pct);
+  $("#writeRetry").addEventListener("click", () => startWrite(write.catId));
+  $("#writeBack").addEventListener("click", renderHome);
+}
+$("#writeHome").addEventListener("click", renderHome);
+
 /* ============ Keyboard shortcuts ============ */
 document.addEventListener("keydown", (e) => {
   if (!$("#view-deck").hidden) {
@@ -389,6 +547,13 @@ document.addEventListener("keydown", (e) => {
     if (!quiz.locked && ["1", "2", "3", "4"].includes(e.key)) {
       const opt = document.querySelectorAll(".option")[Number(e.key) - 1];
       if (opt) opt.click();
+    }
+  }
+  if (!$("#view-write").hidden && write) {
+    /* the input handles its own Enter; only act when focus is elsewhere */
+    if (e.target.tagName !== "INPUT" && write.locked && (e.key === "Enter" || e.key === " ")) {
+      e.preventDefault();
+      advanceWrite();
     }
   }
 });
