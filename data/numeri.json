@@ -143,9 +143,7 @@
       "it": "mille",
       "en": "one thousand",
       "note": "Plural is “mila”: duemila, tremila. A thousand little irregularities, this language."
-    }
-  ]
-}
+    },
     { "id": "num_021", "level": "B1", "it": "duecento", "en": "two hundred", "ex": "Il libro costa duecento euro.", "exEn": "The book costs two hundred euros.", "note": "Cento never takes a plural — duecento, trecento, quattrocento… compound and done." },
     { "id": "num_022", "level": "B1", "it": "duemila", "en": "two thousand", "ex": "La macchina costa duemila euro.", "exEn": "The car costs two thousand euros.", "note": "Mille turns into -mila when it teams up: duemila, tremila, diecimila. Never 'due mille'." },
     { "id": "num_023", "level": "B1", "it": "centinaia di", "en": "hundreds of", "ex": "Centinaia di persone alla festa.", "exEn": "Hundreds of people at the party.", "note": "centinaio → centinaia, migliaio → migliaia. The 'di' is not optional." },
@@ -158,3 +156,5 @@
     { "id": "num_030", "level": "C1", "it": "il doppio", "en": "double / twice as much", "ex": "Ci vuole il doppio del tempo.", "exEn": "It takes twice as long.", "note": "Il doppio di — 'double the'. Works for time, quantities, and excuses." },
     { "id": "num_031", "level": "C1", "it": "circa", "en": "about / approximately", "ex": "Eravamo una ventina circa.", "exEn": "We were about twenty or so.", "note": "Can float after the number too: 'venti persone circa'. Very Italian vagueness." },
     { "id": "num_032", "level": "C1", "it": "un paio", "en": "a couple (of)", "ex": "Ci vediamo tra un paio di giorni.", "exEn": "See you in a couple of days.", "note": "'Un paio di' is delightfully vague — could be two, could be five. Nobody counts." }
+  ]
+}

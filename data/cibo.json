@@ -125,9 +125,7 @@
       "en": "dinner",
       "ex": "A cena alle otto?",
       "exEn": "Dinner at eight?"
-    }
-  ]
-}
+    },
     { "id": "cib_016", "level": "A2", "it": "il pomodoro", "en": "the tomato", "ex": "Una pasta al pomodoro, per favore.", "exEn": "A pasta with tomato sauce, please.", "note": "Pomodoro = pomo d'oro, 'golden apple'. The things etymology gives you." },
     { "id": "cib_017", "level": "A2", "it": "la carne", "en": "the meat", "ex": "Non mangio carne.", "exEn": "I don't eat meat.", "note": null },
     { "id": "cib_018", "level": "A2", "it": "il pesce", "en": "the fish", "ex": "Stasera mangiamo pesce.", "exEn": "Tonight we're eating fish.", "note": "On Christmas Eve, fish is mandatory — see la vigilia in Feste." },
@@ -142,3 +140,5 @@
     { "id": "cib_027", "level": "B1", "it": "il piatto", "en": "the dish / the plate", "ex": "Il piatto del giorno è la carbonara.", "exEn": "Today's special is carbonara.", "note": "A proper meal goes primo, secondo, contorno, dolce. Asking for everything at once marks you as a tourist." },
     { "id": "cib_028", "level": "B2", "it": "avere fame", "en": "to be hungry (lit. 'to have hunger')", "ex": "Ho una fame!", "exEn": "I'm starving!", "note": "Italians HAVE hunger, they don't BE it: ho fame, hai fame. Same trick with thirst: ho sete." },
     { "id": "cib_029", "level": "B2", "it": "avere sete", "en": "to be thirsty (lit. 'to have thirst')", "ex": "Hai sete? Ti porto un'acqua.", "exEn": "Are you thirsty? I'll get you a water.", "note": null }
+  ]
+}
